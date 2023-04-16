@@ -27,31 +27,33 @@
         crossorigin="anonymous"
     /><!--Font import-->
   </head>
-  <body>
+  <body class="bg-light">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div> 
-    <div id="contact_form">
-      <h3 class="col-md-4 mb-3">Get in touch!</h3>
+    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+
       <form
         action=""
         method="POST"
-        class="bg-light"
+        class="w-75 p-3"
       >
+        <h3 class="mb-4">Get in touch!</h3>
         <div class="form-group">        
-            <div class="col-md-4 mb-3">
+            <div class="mb-4">
                 <label>Email:</label>
                 <input class="form-control" type="email" name="email" placeholder="Enter your email here">
             </div>
     
-            <div class="col-md-4 mb-3">
+            <div class="mb-4">
                 <label>Message:</label>
                 <textarea class="form-control" name="message" placeholder="Enter your message here"></textarea>
             </div>
 
           <div class="text-center">
-              <button type="submit" class="btn btn-danger mb-2">Send</button>
+              <button type="submit" class="btn btn-danger w-100">Send</button>
           </div>
       </form>
+    
     </div>
 
     <!--Bootstrap scripts-->
