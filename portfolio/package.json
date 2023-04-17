@@ -12,7 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://SteveGalea.github.io/steve.galea.github.io",
+  "homepage": "https://SteveGalea.github.io/SteveGalea",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
