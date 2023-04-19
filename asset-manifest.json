@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SteveGalea/static/css/main.b8497e63.css",
+    "main.css": "/SteveGalea/static/css/main.239d2680.css",
     "main.js": "/SteveGalea/static/js/main.19bc2460.js",
     "static/js/787.1ed0c42c.chunk.js": "/SteveGalea/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile720.jpg": "/SteveGalea/static/media/profile720.78c8c8abe43456f56503.jpg",
     "index.html": "/SteveGalea/index.html",
     "static/media/up_arrow.svg": "/SteveGalea/static/media/up_arrow.609ccc3d69cd59c57157.svg",
-    "main.b8497e63.css.map": "/SteveGalea/static/css/main.b8497e63.css.map",
+    "main.239d2680.css.map": "/SteveGalea/static/css/main.239d2680.css.map",
     "main.19bc2460.js.map": "/SteveGalea/static/js/main.19bc2460.js.map",
     "787.1ed0c42c.chunk.js.map": "/SteveGalea/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8497e63.css",
+    "static/css/main.239d2680.css",
     "static/js/main.19bc2460.js"
   ]
 }
