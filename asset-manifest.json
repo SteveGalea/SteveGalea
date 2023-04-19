@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/SteveGalea/static/css/main.073c9b0a.css",
-    "main.js": "/SteveGalea/static/js/main.be31f6f1.js",
+    "main.css": "/SteveGalea/static/css/main.b8497e63.css",
+    "main.js": "/SteveGalea/static/js/main.19bc2460.js",
     "static/js/787.1ed0c42c.chunk.js": "/SteveGalea/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/SteveGalea/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/profile720.jpg": "/SteveGalea/static/media/profile720.78c8c8abe43456f56503.jpg",
     "index.html": "/SteveGalea/index.html",
-    "main.073c9b0a.css.map": "/SteveGalea/static/css/main.073c9b0a.css.map",
-    "main.be31f6f1.js.map": "/SteveGalea/static/js/main.be31f6f1.js.map",
+    "static/media/up_arrow.svg": "/SteveGalea/static/media/up_arrow.609ccc3d69cd59c57157.svg",
+    "main.b8497e63.css.map": "/SteveGalea/static/css/main.b8497e63.css.map",
+    "main.19bc2460.js.map": "/SteveGalea/static/js/main.19bc2460.js.map",
     "787.1ed0c42c.chunk.js.map": "/SteveGalea/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.be31f6f1.js"
+    "static/css/main.b8497e63.css",
+    "static/js/main.19bc2460.js"
   ]
 }
