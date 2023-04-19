@@ -11,7 +11,7 @@
       name="description"
       content="Webportfolio created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> <!--%PUBLIC_URL% replaced with URL of the public folder upon building--> 
+    <!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/images/profile192.jpg" /> <!--%PUBLIC_URL% replaced with URL of the public folder upon building--> 
       <!--manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
@@ -27,39 +27,248 @@
         crossorigin="anonymous"
     /><!--Font import-->
   </head>
-  <body class="bg-light">
+  <body id="#landing" class="bg-light document-fonts">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div> 
-    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-
-      <form
-        action=""
-        method="POST"
-        class="w-75 p-3"
-      >
-        <h3 class="mb-4">Get in touch!</h3>
-        <div class="form-group">        
-            <div class="mb-4">
-                <label>Email:</label>
-                <input class="form-control" type="email" name="email" placeholder="Ex: youremail@email.com">
-            </div>
+    <div class="page_controls_container">
+      <div class="page_controls">
+        <div class="d-flex justify-content-center">
+          <a href='#root'>
+            <img src="%PUBLIC_URL%/images/ui/up_arrow.svg" alt="Go to bottom" />
+          </a>      
+        </div>  
+        <div class="d-flex align-items-center justify-content-center">
+          <a href='#contactMe'>
+            <img src="%PUBLIC_URL%/images/ui/down_arrow.svg" alt="Go to bottom" />
+          </a>   
+        </div>
+      </div>
+    </div>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       
-            <div class="mb-4">
-                <label>Email:</label>
-                <input class="form-control" type="text" name="name" placeholder="Ex: Steve Galea">
-            </div>
-    
-            <div class="mb-4">
-                <label>Message:</label>
-                <textarea class="form-control" name="message" placeholder="Enter your message..."></textarea>
-            </div>
-
-          <div class="text-center">
-              <button type="submit" class="btn btn-danger w-100">Send</button>
-          </div>
+      <form class="form-inline my-2 my-lg-0">
+        
+        <a id="facebook" href="https://www.facebook.com/steve.galea.37">
+        <img src="%PUBLIC_URL%/images/android-chrome-192x192.png" class="rounded-circle p-3" style="max-width: 80px;" alt="Profile"/>
+          </a>  
       </form>
+      <a class="navbar-brand hover_text" href="#root" >Steve Galea</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link hover_text" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover_text" href="#projects">My Projects</a>
+          </li>
+          
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hover_text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects & University Assignments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item hover_text" href="#">Action</a>
+              <a class="dropdown-item hover_text" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item hover_text" href="#">Something else here</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link hover_text" href="#contactMe">Contact Me</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled" href="#">Blog</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <div id="root"></div> 
+    
+    
+    <section >
+      <div id="projects">
+        <div id="printProjects"></div>
+        <h1 class="text-center hover_text"></h1>
+        <div class="dot" style="position:absolute; left:25%;"></div>
+        <b><h1 class="text-center hover_text" style="color:#F45B69">Current Projects</h1></b>
+        <div class="dot bg-primary" style="position:absolute; left:25%;"></div>
+        <b><h1 class="text-center hover_text text-primary">Upcoming Projects</h1></b>
+      </div>
+
+      <div class="timeline">
+        <div class="dot"></div>
+        <div class="vertical-line"></div>
+        <div class="dot"></div>                
+        <div class="vertical-line"></div>
+        <div class="dot"></div>                
+        <div class="vertical-line"></div>
+        <div class="dot"></div>                
+        <div class="vertical-line"></div>
+        <div class="dot"></div>                
+        <div class="vertical-line"></div>
+        <div class="dot bg-primary"></div>       
+        <div class="vertical-line "></div> 
+        <div class="dot bg-primary"></div>                
+        <div class="vertical-line "></div>
+        <div class="dot bg-primary"></div>             
+      </div>
+
+      <div class="timeline_container">
+      <!--https://webdesign.tutsplus.com/tutorials/building-a-horizontal-timeline-with-css-and-javascript-cms-28378-->
+        
+        <div class="cards">
+            <div id="FYP" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header">
+                  <h4 class="card-title text_hover card_title_hover" >Final Year Project in Data Science (Python)</h4>
+                </div>
+                
+                <div  class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/casino.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    For my <b>Bachelor's Thesis</b> I employed <b>Monte Carlo Simulations (MCS)</b> 
+                    to predict fixture and tournament outcomes. Distributions from which MCS 
+                    sampled an outcome were based on the ELO Rating System.</p>
+                </div>
+              </div>
+          
+            <div id="MLP" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header">
+                  <h4 class="card-title text_hover card_title_hover" >CIS3187: Multilayer Perceptron (Python)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/mlp.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    For this assignment, a <b>Multi Layer Perceptron (MLP)</b> with Back 
+                    Propagation was developed from scratch in order to learn a Neural Network 
+                    structure. It was used to predict Titanic survivors and non-survivors.
+                  </p>
+                </div>
+              </div>
+    
+              <div id="testing" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header">
+                  <h4 class="card-title text_hover card_title_hover" >CPS3230: Software Testing Assignments (Java)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/testing.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    Developed a screen scraper using Test and Behaviour Driven Development, ran
+                    tests using <b>Selenium, JUnit5, and Cucumber</b>. Also developed a Run-Time 
+                    Verification monitor and performed Model-Based Testing.</p>
+                </div>
+              </div>
+              
+              <div id="website" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header">
+                  <h4 class="card-title text_hover card_title_hover" >CIS1054 & CIS2055 & CIS2108: Web Development (.NET 5/6: C#)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/website.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    Understood Web design concepts: Authentication, Authorization, Stateless
+                     Webservers, Caching, API Requests, Client-side attacks & SQL Injection. 
+                    Followed established best practices and Bootstrap in web design.</p>
+                </div>
+              </div>
+              <div id="mobile" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header">
+                  <h4 class="card-title text_hover card_title_hover" >CIS2208 & CIS3186: Mobile Apps 1 & 2 (Java | JSX & Typescript)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/mobile.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    Developed DiaryNotes App using Android Studio, and Java. Additionally,                   
+                    developed FindMyCar IoT App using <b>React-Native Framework</b>. <b>Usability 
+                    Tests</b> were carried out. Material UI Guidelines were followed.</p>
+                </div>
+              </div>
+              
+              <div id="cloud" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header bg-primary">
+                  <h4 class="card-title text_hover card_title_hover" >CIS3111: Cloud Computing (Google App Engine & Docker Assignments)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/cloud.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    Currently developing a scalable web application to get familiarised with
+                    the Google App Engine, as part of an assignment. Currently, am being introduced
+                    to Containerized Application Development using Docker.
+                </div>
+              </div>
+
+              <div id="stock" class="card text-center">
+                <!--Material Cards here-->
+                <div class="card-header bg-primary">
+                  <h4 class="card-title text_hover card_title_hover" >CIS3400: Fintech (Python)</h4>
+                </div>
+                
+                <div class="card-body" >
+                  <img class="card-img" src="%PUBLIC_URL%/images/icons/stock-market.png"/>
+                  <p class="card-text text_hover card_text_hover">
+                    For this assignment, we are to analyse 3 markets of our choice and provide
+                    visualisations to capture trends, and make future predictions of the market stock prices.
+                </div>
+              </div>
+
+        </div>
+        
+      </div>
     </div>
+        
+
+    </section>
+
+    <section id="contactMe"  >
+      <div id="contacts"></div>
+      <h1 class="text-center hover_text"><code>Get in touch!</code></h1>
+      <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+      
+        <form
+          action="https://formspree.io/f/mwkjwdkp"
+          method="POST"
+          class="w-75 p-3 "
+        >
+            <div class="form-group"> 
+            </div>
+            <div class="form-group">        
+              <div class="mb-4">
+                  <label>Email:</label>
+                  <input class="form-control" type="email" name="email" placeholder="Ex: youremail@email.com">
+              </div>
+        
+              <div class="mb-4">
+                  <label>Name:</label>
+                  <input class="form-control" type="text" name="name" placeholder="Ex: Steve Galea">
+              </div>
+      
+              <div class="mb-4">
+                  <label>Message:</label>
+                  <textarea class="form-control" name="message" placeholder="Enter your message..."></textarea>
+              </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger w-100">Send</button>
+            </div>
+        </form>
+      </div>
+    </section>
 
     <!--Bootstrap scripts-->
     <script
@@ -77,5 +286,33 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"
     ></script>
+
+
+    
+    <!--<div class="line_container">
+      <div class= "vertical"></div>
+      <div class= "vertical_read"></div>
+    </div>-->
   </body>
+  <footer class="document-fonts text-center p-3">
+    
+    <h5>Attributions</h5>
+    <li>
+      <ul>MCS Dice icon: 
+        <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by juicy_fish - Flaticon</a>
+      </ul> 
+      <ul>Testing icon: 
+        <a href="https://www.flaticon.com/free-icons/tester" title="tester icons">Tester icons created by juicy_fish - Flaticon</a>
+      </ul> 
+      <ul>Mobile icon: 
+        <a href="https://www.flaticon.com/free-icons/mobile-app" title="mobile app icons">Mobile app icons created by Freepik - Flaticon</a>
+      </ul>
+      <ul>Website icon: 
+        <a href="https://www.flaticon.com/free-icons/development" title="development icons">Development icons created by Design Circle - Flaticon</a></ul>
+      <ul>MLP icon: 
+        <a href="https://www.flaticon.com/free-icons/neural-network" title="neural network icons">Neural network icons created by Freepik - Flaticon</a>
+      </ul>
+    </li>
+    <div id="copyright"></div>
+  </footer>
 </html>
