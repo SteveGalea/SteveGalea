@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SteveGalea/static/css/main.239d2680.css",
-    "main.js": "/SteveGalea/static/js/main.19bc2460.js",
+    "main.css": "/SteveGalea/static/css/main.f0afe045.css",
+    "main.js": "/SteveGalea/static/js/main.b8869e67.js",
     "static/js/787.1ed0c42c.chunk.js": "/SteveGalea/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile720.jpg": "/SteveGalea/static/media/profile720.78c8c8abe43456f56503.jpg",
     "index.html": "/SteveGalea/index.html",
     "static/media/up_arrow.svg": "/SteveGalea/static/media/up_arrow.609ccc3d69cd59c57157.svg",
-    "main.239d2680.css.map": "/SteveGalea/static/css/main.239d2680.css.map",
-    "main.19bc2460.js.map": "/SteveGalea/static/js/main.19bc2460.js.map",
+    "main.f0afe045.css.map": "/SteveGalea/static/css/main.f0afe045.css.map",
+    "main.b8869e67.js.map": "/SteveGalea/static/js/main.b8869e67.js.map",
     "787.1ed0c42c.chunk.js.map": "/SteveGalea/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.239d2680.css",
-    "static/js/main.19bc2460.js"
+    "static/css/main.f0afe045.css",
+    "static/js/main.b8869e67.js"
   ]
 }
