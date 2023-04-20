@@ -57,6 +57,7 @@ function App() {
         <div className="text-center">
           <img 
             src={profile} 
+            id="zoom_element"
             className="border border-danger rounded-circle w-25 image-transition p-2 min-w-200" 
               alt="Profile"/>     
 
