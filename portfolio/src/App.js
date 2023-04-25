@@ -40,7 +40,7 @@ function App() {
       </header>
       <div id='aboutMe' className='text-center'>
         <h1 className='hover_text'>
-          <code>{terminal_string}print(steve.info)</code>
+          <code>{terminal_string}print(steve.info())</code>
         </h1>
         <br/>  
         <div className='about-text'>
